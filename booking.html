@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<style>
+   * {
+       box-sizing: border-box; 
+       
+   }
+   body {
+       margin: 0;
+       padding: 0;
+      
+    
+
+   }
+   .navbar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: 'Exo', sans-serif;
+       background-color: #000000;
+       color: white;
+}
+   
+   .logo{
+       font-size: 1.5rem;
+       margin: .5rem;
+       font-weight: 1000;
+   }
+   .navbarlinks ul{
+       margin: 0;
+       padding: 0;
+       display: flex;
+   }
+   .navbarlinks li{
+       list-style: none;
+   }
+   .navbarlinks li a{
+       text-decoration: none;
+       color: white;
+       padding: 1rem;
+       display: block;
+   }
+   .navbarlinks li:hover{
+       background-color: #003D78;
+   }
+   .togglebutton{
+       position: absolute;
+       top: .75rem;
+       right: 1rem;
+       display: none;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 30px;
+       height: 21px;
+   }
+   .togglebutton .bar{
+       height: 3px;
+       width: 100%;
+       background-color: white;
+       border-radius: 10px;
+   }
+   .main_bg{
+    background-image: url(pay.jpg);
+    max-width: 1280px;
+    height: 800px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: #fff;
+    font-family: 'EXO', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p{
+    color: #fff;
+    font-family: 'EXO', sans-serif;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    font-family: 'EXO', sans-serif;
+    background: none;
+    border: 1px solid #0066B1;;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: 'EXO', sans-serif;
+    background: none;
+    border: 1px solid  #0066B1;;
+    font-size: 20px;
+    color: #000000;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'EXO', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+@media(max-width:600px){
+   .togglebutton{
+       display: flex;
+   }
+   .navbarlinks{
+      display: none;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 1);
+
+   }
+   .navbar{
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   .navbarlinks ul {
+       width:100%;
+       flex-direction: column;
+   }
+   .navbarlinks li{
+       text-align: center;
+   }
+   .navbarlinks li a{
+       padding: .5rem 1rem;
+   }
+   .navbarlinks.active{
+       display: flex;
+   }
+}
+
+.welcome{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+footer{
+       background-color: #111;
+       height: auto;
+       width: 100%;
+       font-family: 'Exo', sans-serif;
+       padding-top: 40px;
+       color: #fff;
+       float: left;
+       
+     }
+.Footer-Content h3{
+           font-size: 1.8rem;
+           font-weight: 400;
+           text-transform: uppercase;
+           line-height:3rem;
+       
+}
+.Footer-Content ul {
+           list-style: none;
+}
+.Footer-Content ul li a{
+   color: gray;
+           text-decoration:none;
+}
+.carwashes{
+           float: left;    
+           margin-top: 8px;
+           padding: 15px;
+           width: 100%;
+           margin: -1%;
+           text-align: center;
+           
+       
+       }
+
+       .carwashes a {
+           text-decoration: none;
+           color: #000000;
+           font-family: 'Open Sans', sans-serif;
+       }
+
+       .carwashes ul{
+           list-style: none;
+       }
+       .centered {
+ position: absolute;
+}
+
+::placeholder { 
+  color:  #fff;
+ 
+}
+
+
+</style>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+       <script src="script.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap" rel="stylesheet">
+       <title>CLEAN-RIDE</title>
+   </head>
+
+    <body style="background-color: #EBEBEB;">
+        <nav class="navbar">
+    
+            <div class="logo">CLEAN-RIDE <img src="clean ride.png" width="3%" height="3%"></div>
+            <a href="#" class="togglebutton">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbarlinks">
+              <ul>
+                  <li><a href="homee.html"><img src="home.png" 
+                      width="30" 
+                      height="30" /></a></li>
+                  <li><a href="profile.html"><img src="profile.png" 
+                      width="23" 
+                      height="25" /></a></li>
+                  <li><a href="location.html"><img src="location.png" 
+                      width="25" 
+                      height="25" /></a></li>
+                  <li><a href="store.html"><img src="store.png" 
+                      width="32" 
+                      height="30" /></a></li>
+        </ul>
+        </div>
+        </nav>
+   
+        <div class="main_bg">
+        <div class="form">
+            <div class="form-text">
+                <h1><span><img src="art-1.png" alt=""></span>Book Now <span><img src="art-1.png" alt=""></span></h1>
+                <p>BOOK YOUR VEHICLE CLEANING SERVICE</p>
+            </div>
+            <div class="main-form">
+                <form action="index.php" method="get">
+                    <div>
+                        <span>Your full name ?</span>
+                        <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                    </div>
+                    <div>
+                        <span>Your email address ?</span>
+                        <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                    </div>
+                    <div>
+                      
+                        <span style="color: white">SERVICE ?</span>
+                        <select name="SERVICE " id="SERVICE " required>
+                            <option value="">SERVICE</option>
+                            <option value="1">SERVICE 1 </option>
+                            <option value="2">SERVICE 2</option>
+                            <option value="3">SERVICE 3</option>
+                            <option value="4">SERVICE 4</option>
+                        </select>
+                        
+                    </div>
+                    <div>
+                        <span >What time ?</span>
+                        <input  type="text" name="time" id="time" placeholder="Time" required >
+                    </div>
+                    <div>
+                        <span>What is the date ?</span>
+                        <input type="date" name="date" id="date" placeholder="date" required>
+                    </div>
+                    <div>
+                        <span>Your phone number ?</span>
+                        <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                    </div>
+                    <div id="submit"><a href="Pay page.html" style="color: red">Confirm</a>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+   <footer>
+   <div class="Footer-Content">
+       
+         <h3 >CLEAN-RIDE<img src="clean ride.png" width="3%" height="3%"></h3>
+       
+        <ul>
+           <li><a href="homee.html">home</a></li>
+           <li><a href="profile.html">profile</a></li>
+           <li><a href="location.html">location</a></li>
+           <li><a href="store.html">store</a></li>
+           </ul>
+   </div>
+   </footer>
+</html>

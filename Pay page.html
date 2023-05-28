@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            box-sizing: border-box; 
+            
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(pay.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: #fff;
+         
+    
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Exo', sans-serif;
+            background-color: #000000;
+            color: white;
+    }
+        
+        .logo{
+            font-size: 1.5rem;
+            margin: .5rem;
+            font-weight: 1000;
+        }
+        .navbarlinks ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbarlinks li{
+            list-style: none;
+        }
+        .navbarlinks li a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            display: block;
+        }
+        .navbarlinks li:hover{
+            background-color: #003D78;
+        }
+        .togglebutton{
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+        .togglebutton .bar{
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+    
+    @media(max-width:600px){
+        .togglebutton{
+            display: flex;
+        }
+        .navbarlinks{
+           display: none;
+           width: 100%;
+           background-color: rgba(0, 0, 0, 1);
+    
+        }
+        .navbar{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbarlinks ul {
+            width:100%;
+            flex-direction: column;
+        }
+        .navbarlinks li{
+            text-align: center;
+        }
+        .navbarlinks li a{
+            padding: .5rem 1rem;
+        }
+        .navbarlinks.active{
+            display: flex;
+        }
+    }
+    
+    .welcome{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    footer{
+            background-color: #111;
+            height: auto;
+            width: 100%;
+            font-family: 'Exo', sans-serif;
+            padding-top: 40px;
+            color: #fff;
+            float: left;
+            
+          }
+    .Footer-Content h3{
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height:3rem;
+            
+    }
+    .Footer-Content ul {
+                list-style: none;
+    }
+    .Footer-Content ul li a{
+        color: gray;
+                text-decoration:none;
+    }
+    .container{
+  
+  
+           text-align:center;
+           padding: 1px;
+           font-family: 'exo';
+    }
+        .cards img{
+    width: 100px;
+}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap" rel="stylesheet">
+    <title>CLEAN-RIDE</title>
+</head>
+<body style="background-color: #EBEBEB;">
+    <nav class="navbar">
+
+      <div class="logo">CLEAN-RIDE <img src="clean ride.png" width="3%" height="3%"></div>
+      <a href="#" class="togglebutton">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbarlinks">
+        <ul>
+            <li><a href="homee.HTML"><img src="home.png" 
+                width="30" 
+                height="30" /></a></li>
+            <li><a href="profile.html"><img src="profile.png" 
+                width="23" 
+                height="25" /></a></li>
+            <li><a href="location.html"><img src="location.png" 
+                width="25" 
+                height="25" /></a></li>
+            <li><a href="store.html"><img src="store.png" 
+                width="32" 
+                height="30" /></a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Card holders name</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>EXPIRATION DATE</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2021</option>
+                        <option value="2018">2022</option>
+                        <option value="2017">2023</option>
+                        <option value="2016">2024</option>
+                        <option value="2015">2025</option>
+                      </select>
+                </div>
+            </div>    
+        </div>
+        <BR>
+        <button onclick="myFunction()">CONFIRM</button>
+        <script>
+            function myFunction() {
+              var txt;
+              if (confirm("ARE YOU SURE!")) {
+              }
+            }
+            </script>
+            
+      
+    </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+     <div class="cards">
+                    <img src="mc.png" alt="">
+                    <img src="vi.png" alt="">
+                    <img src="pp.png" alt="">
+                <br>
+                <br>
+                </div>
+                
+               
+                
+                
+
+</body>
+<footer>
+    <div class="Footer-Content">
+        
+          <h3 >CLEAN-RIDE<img src="clean ride.png" width="3%" height="3%"></h3>
+		
+         <ul>
+            <li><a href="homee.HTML">home</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="location.html">location</a></li>
+            <li><a href="store.html">store</a></li>
+
+         </ul>
+    </div>
+    </footer>
+</html>

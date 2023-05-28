@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<style>
+   * {
+       box-sizing: border-box; 
+       
+   }
+   body {
+       margin: 0;
+       padding: 0;
+      
+    
+
+   }
+   .navbar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: 'Exo', sans-serif;
+       background-color: #000000;
+       color: white;
+}
+   
+   .logo{
+       font-size: 1.5rem;
+       margin: .5rem;
+       font-weight: 1000;
+   }
+   .navbarlinks ul{
+       margin: 0;
+       padding: 0;
+       display: flex;
+   }
+   .navbarlinks li{
+       list-style: none;
+   }
+   .navbarlinks li a{
+       text-decoration: none;
+       color: white;
+       padding: 1rem;
+       display: block;
+   }
+   .navbarlinks li:hover{
+       background-color: #003D78;
+   }
+   .togglebutton{
+       position: absolute;
+       top: .75rem;
+       right: 1rem;
+       display: none;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 30px;
+       height: 21px;
+   }
+   .togglebutton .bar{
+       height: 3px;
+       width: 100%;
+       background-color: white;
+       border-radius: 10px;
+   }
+
+@media(max-width:600px){
+   .togglebutton{
+       display: flex;
+   }
+   .navbarlinks{
+      display: none;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 1);
+
+   }
+   .navbar{
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   .navbarlinks ul {
+       width:100%;
+       flex-direction: column;
+   }
+   .navbarlinks li{
+       text-align: center;
+   }
+   .navbarlinks li a{
+       padding: .5rem 1rem;
+   }
+   .navbarlinks.active{
+       display: flex;
+   }
+}
+
+.welcome{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+footer{
+       background-color: #111;
+       height: auto;
+       width: 100%;
+       font-family: 'Exo', sans-serif;
+       padding-top: 40px;
+       color: #fff;
+       float: left;
+       
+     }
+.Footer-Content h3{
+           font-size: 1.8rem;
+           font-weight: 400;
+           text-transform: uppercase;
+           line-height:3rem;
+       
+}
+.Footer-Content ul {
+           list-style: none;
+}
+.Footer-Content ul li a{
+   color: gray;
+           text-decoration:none;
+}
+.carwashes{
+            float: left;    
+            margin-top: 8px;
+            padding: 15px;
+            width: 100%;
+            margin: -1%;
+            
+        
+        }
+
+        .carwashes a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .carwashes ul{
+            list-style: none;
+        }
+
+</style>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="script.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap" rel="stylesheet">
+       <title>CLEAN-RIDE</title>
+   </head>
+   <BODY style="background-color: #EBEBEB;">
+       <nav class="navbar">
+ 
+         <div class="logo">CLEAN-RIDE <img src="clean ride.png" width="3%" height="3%"></div>
+         <a href="#" class="togglebutton">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+         </a>
+         <div class="navbarlinks">
+           <ul>
+               <li><a href="homee.HTML"><img src="home.png" 
+                   width="30" 
+                   height="30" /></a></li>
+               <li><a href="profile.html"><img src="profile.png" 
+                   width="23" 
+                   height="25" /></a></li>
+               <li><a href="location.html"><img src="location.png" 
+                   width="25" 
+                   height="25" /></a></li>
+               <li><a href="store.html"><img src="store.png" 
+                   width="32" 
+                   height="30" /></a></li>
+           </ul>
+         </div>
+       </nav>
+       <img src="detailing CR.jpg" width="100%" height="70%">
+       
+       <div class="carwashes">
+        <h1>  <ul>
+            <img src="sparlking auto.jpg" width="200px" height="100px" />
+            <li style="font-size: 30px"><a href="Car wash 1.html">Sparkling Car Wash</a></li>
+         </ul></h1>
+         <br>
+         <br>
+         <br>
+         <h2>  <ul>
+            <img src="star.jpg" width="200px" height="100px"  />
+            <li style="font-size: 30px"><a href="Car wash 2.html">Star Car Wash</a></li>
+         </ul></h2>
+         <br>
+         <br>
+         <br>
+         <h3>  <ul>
+             <img src="brown bear.jpg" width="200px" height="100px" />
+            <li style="font-size: 30px"><a href="Car wash 3.html">Brown bear Car Wash</a></li>
+         </ul></h3>
+         <br>
+         <br>
+         <br>
+         <h4>  <ul>
+             <img src="Screenshot 2023-04-26 151707.jpg" width="200px" height="100"/>
+            <li style="font-size: 30px"><a href="Car wash 4.html">Ultimate Shine Car Wash</a></li>
+         </ul></h4>
+         <br>
+         <br>
+         <br>   
+</div>
+   </BODY>
+  
+   <footer>
+   <div class="Footer-Content">
+       
+         <h3 >CLEAN-RIDE<img src="clean ride.png" width="3%" height="3%"></h3>
+       
+        <ul>
+           <li><a href="homee.HTML">home</a></li>
+           <li><a href="profile.html">profile</a></li>
+           <li><a href="location.html">location</a></li>
+           <li><a href="store.html">store</a></li>
+
+        </ul>
+   </div>
+   </footer>
+</html>
